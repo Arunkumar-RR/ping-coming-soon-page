@@ -45,7 +45,14 @@
         var err2 = "Please provide a valid email address";
         var email = document.getElementById("email");
         var error = document.getElementById("error");
-    
+        function validate()
+        {
+          if(email == " ")
+          {
+            error.style.display = "block";
+            error.innerText = err1;
+          }
+        }
     </script>
 </body>
 </html>
