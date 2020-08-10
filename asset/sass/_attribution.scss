@@ -1,0 +1,35 @@
+
+//footer
+.attribution
+{
+    padding: 0;
+    @include flex(row,center,center,wrap);
+    h6
+    {
+        margin: 10px 15px ;
+        font-size: $font-size-5;
+        font-weight: map-get($map: $font-weight, $key: regular );
+        a
+        {
+            font-weight: map-get($map: $font-weight, $key: semi-bold );
+            color: $color-1;
+            letter-spacing: 1px;
+        }
+    }
+}
+@include smartphone
+{
+    .attribution
+    {
+        text-align: center;
+        padding: 0;
+        margin: auto 0 0 0;
+        @include flex(column-reverse,center,center,wrap);
+        h6
+        {
+            margin: 10px 0px;
+            font-size: $font-size-5;
+            letter-spacing: 1px;
+        }
+    }
+}

@@ -1,0 +1,101 @@
+.wrapper
+{
+    @include flex(column,center,center,wrap);
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    #icon
+    {
+        margin: 40px 0;
+    }
+    .heading
+    {
+        font-size: $font-size-1;
+        color: $color-4;
+        font-weight: map-get($map: $font-weight, $key: light );
+        margin: 0 0 10px 0;
+        span
+        {
+            color: $color-5;
+            font-weight: map-get($map: $font-weight, $key: bold);
+        }
+    }
+    .content
+    {
+        font-size: $font-size-4;
+    }
+    .form
+    {
+        width: 85%;
+        margin: 30px 0;
+        text-align: center;
+        @include flex(row,center,center,wrap);
+        .email
+        {
+            @include flex(column,flex-start,center,wrap);
+            width: 50%;
+            margin: 0  10px 0 0;
+            #email
+            {
+                padding: 10px 20px;
+                height: 40px;
+                width: 100%;
+                border-radius: $border-radius-3;
+                border: 1px solid $color-2;
+                &:invalid
+                {
+                    border-color: $color-3;
+                }
+           
+            }
+            :active,:focus
+            {
+                outline: none;
+            }
+            ::placeholder
+            {
+                color: $color-2;
+            }
+            #error
+            {
+                display: none;
+                color: $color-3;
+                font-size: $font-size-5;
+                width: fit-content;
+                margin: 10px 0 0 20px;
+            }
+        }
+        .btn
+        {
+            align-self: flex-start;
+            padding: 13px;
+            width: 20%;
+            border-radius: $border-radius-3;
+            border: none;
+            background-color: $color-1;
+            box-shadow: $box-shadow-2;
+            color: $neutral-1;
+            font-family: $font-family;
+            font-size: $font-size-5;
+            cursor: pointer;
+         
+        }
+     
+    }
+    .hero-container-image
+    {
+        width: 60%;
+        margin: 40px 0;
+    }
+    .social-links
+    {
+        @include flex(row,space-evenly,center,wrap);
+        width: 15%;
+        margin: 20px 0;
+    }
+    .copyright
+    {
+        font-size: $font-size-5;
+        color: $color-4;
+    }
+}

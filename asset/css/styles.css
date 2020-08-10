@@ -1,0 +1,354 @@
+.attribution {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.attribution h6 {
+  margin: 10px 15px;
+  font-size: 0.6em;
+}
+
+.attribution h6 a {
+  font-weight: 600;
+  color: #4f7df3;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 700px) {
+  .attribution {
+    text-align: center;
+    padding: 0;
+    margin: auto 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse wrap;
+            flex-flow: column-reverse wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .attribution h6 {
+    margin: 10px 0px;
+    font-size: 0.6em;
+    letter-spacing: 1px;
+  }
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.wrapper #icon {
+  margin: 40px 0;
+}
+
+.wrapper .heading {
+  font-size: 2em;
+  color: #969696;
+  font-weight: 300;
+  margin: 0 0 10px 0;
+}
+
+.wrapper .heading span {
+  color: #151f29;
+  font-weight: 700;
+}
+
+.wrapper .content {
+  font-size: 0.9em;
+}
+
+.wrapper .form {
+  width: 85%;
+  margin: 30px 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .form .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 50%;
+  margin: 0  10px 0 0;
+}
+
+.wrapper .form .email #email {
+  padding: 10px 20px;
+  height: 40px;
+  width: 100%;
+  border-radius: 25px;
+  border: 1px solid #c2d3ff;
+}
+
+.wrapper .form .email #email:invalid {
+  border-color: #ff5263;
+}
+
+.wrapper .form .email :active, .wrapper .form .email :focus {
+  outline: none;
+}
+
+.wrapper .form .email ::-webkit-input-placeholder {
+  color: #c2d3ff;
+}
+
+.wrapper .form .email :-ms-input-placeholder {
+  color: #c2d3ff;
+}
+
+.wrapper .form .email ::-ms-input-placeholder {
+  color: #c2d3ff;
+}
+
+.wrapper .form .email ::placeholder {
+  color: #c2d3ff;
+}
+
+.wrapper .form .email #error {
+  display: none;
+  color: #ff5263;
+  font-size: 0.6em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px 0 0 20px;
+}
+
+.wrapper .form .btn {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 13px;
+  width: 20%;
+  border-radius: 25px;
+  border: none;
+  background-color: #4f7df3;
+  -webkit-box-shadow: 0 0.1px 2.1px rgba(0, 0, 0, 0.024), 0 0.4px 7.1px rgba(0, 0, 0, 0.036), 0 2px 32px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 0.1px 2.1px rgba(0, 0, 0, 0.024), 0 0.4px 7.1px rgba(0, 0, 0, 0.036), 0 2px 32px rgba(0, 0, 0, 0.06);
+  color: white;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 0.6em;
+  cursor: pointer;
+}
+
+.wrapper .hero-container-image {
+  width: 60%;
+  margin: 40px 0;
+}
+
+.wrapper .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15%;
+  margin: 20px 0;
+}
+
+.wrapper .copyright {
+  font-size: 0.6em;
+  color: #969696;
+}
+
+@media screen and (max-width: 700px) {
+  .wrapper {
+    width: 90%;
+    margin: 20px auto;
+  }
+  .wrapper #icon {
+    margin: 40px 0;
+  }
+  .wrapper .heading {
+    font-size: 0.9em;
+  }
+  .wrapper .content {
+    font-size: 0.6em;
+  }
+  .wrapper .form {
+    width: 80%;
+    margin: 30px 0;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wrapper .form .email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin: 0  10px 0 0;
+  }
+  .wrapper .form .email #email {
+    padding: 10px 20px;
+    height: 40px;
+    width: 100%;
+    border-radius: 25px;
+    border: 1px solid #c2d3ff;
+  }
+  .wrapper .form .email #email:invalid {
+    border-color: #ff5263;
+  }
+  .wrapper .form .email ::-webkit-input-placeholder {
+    color: #c2d3ff;
+  }
+  .wrapper .form .email :-ms-input-placeholder {
+    color: #c2d3ff;
+  }
+  .wrapper .form .email ::-ms-input-placeholder {
+    color: #c2d3ff;
+  }
+  .wrapper .form .email ::placeholder {
+    color: #c2d3ff;
+  }
+  .wrapper .form .email #error {
+    display: none;
+    color: #ff5263;
+    font-size: 0.6em;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 5px 0 20px 0;
+  }
+  .wrapper .form .btn {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 100%;
+    margin: 10px 0;
+  }
+  .wrapper .hero-container-image {
+    width: 100%;
+  }
+  .wrapper .social-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .wrapper .social-links a {
+    margin: 0 5px;
+  }
+  .wrapper .copyright {
+    font-size: 0.6em;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #151f29;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=styles.css.map */
